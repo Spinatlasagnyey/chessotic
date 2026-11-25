@@ -1,11 +1,10 @@
-import { Piece } from './piece'
-import { Tile } from './tile'
-import { BoardConfig } from './boardConfig'
-import { GameConfig } from './gameConfig'
-import { MoveValidator } from './moveValidator'
-import { Move } from './move'
-
-export type Square = { x: number; y: number }
+import { Piece } from './piece.svelte';
+import {Tile} from '../tile';
+import { MoveValidator } from '../moving/moveValidator';
+import type { Square } from '../square';
+import { BoardConfig } from '../configs/boardConfig';
+import { GameConfig } from '../configs/gameConfig';
+import { Move } from '../moving/move';
 
 export class PlayBoard {
     pieces: Piece[]
@@ -57,6 +56,7 @@ export class PlayBoard {
             this.capturedPieces.push(capturedPiece)
         }
         toTile.placePiece(piece)
+        console.log(`Moved piece with id ${piece.id} from (${fromSquare.x}, ${fromSquare.y}) to (${toSquare.x}, ${toSquare.y}).`)
     }
 
     isTileFree(square: Square): boolean {

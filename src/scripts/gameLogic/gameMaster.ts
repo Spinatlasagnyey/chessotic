@@ -1,4 +1,4 @@
-import type { GameConfig } from "./gameConfig"
+import type { GameConfig } from "../configs/gameConfig"
 
 export class GameMaster {
     gameConfig: GameConfig

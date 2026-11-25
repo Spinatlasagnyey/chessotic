@@ -1,5 +1,5 @@
 import type { BoardConfig } from "./boardConfig"
-import type { Piece } from "./piece"
+import type { Piece } from "../board/piece.svelte"
 
 
 export class GameConfig {

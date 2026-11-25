@@ -1,5 +1,5 @@
-import type { MovePattern } from "./movePattern";
-import type { Square } from "./playBoard";
+import type { MovePattern } from "../moving/movePattern";
+import type { Square } from "../square";
 
 export type PieceStatus = {
 	[key: string]: boolean
@@ -8,7 +8,7 @@ export type PieceStatus = {
 export class Piece {
 	id: string
 	type: string
-	position: Square | null
+	position = $state<Square | null>(null)
 	team: number
     patterns: MovePattern[] //This is a copy of the move patterns from the piece type, but can be modified for this specific piece instance
 	status: PieceStatus

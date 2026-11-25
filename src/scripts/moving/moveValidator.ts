@@ -1,5 +1,5 @@
 import { Move } from "./move";
-import type { PlayBoard } from "./playBoard";
+import type { PlayBoard } from "../board/playBoard";
 
 export class MoveValidator {
     
@@ -13,9 +13,10 @@ export class MoveValidator {
         return this.board.doesTileExist(move.to)
         // check if the move is within the board boundaries
         // check if the piece movepattern allows the move
-        // check if the move puts the king in check
         // check if the destination tile is free or occupied by a friendly piece
         // if occupied, check if the move is a valid capture
+        // optional check if the move puts the king in check
+        // make move
         // später
         // check if the move is a valid promotion
         // check if the move is a valid castling

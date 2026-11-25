@@ -1,4 +1,4 @@
-import type { Square } from "./playBoard";
+import type { Square } from "../square";
 
 export class Move {
     from: Square

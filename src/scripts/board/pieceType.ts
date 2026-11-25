@@ -1,4 +1,4 @@
-import type { MovePattern } from "./movePattern";
+import type { MovePattern } from "../moving/movePattern";
 
 export class PieceType {
     id: string

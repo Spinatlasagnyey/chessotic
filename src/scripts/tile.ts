@@ -1,4 +1,4 @@
-import { Piece } from './piece'
+import { Piece } from './board/piece.svelte'
 
 export class Tile {
     x: number

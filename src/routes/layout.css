@@ -1,3 +1,10 @@
 @import 'tailwindcss';
 @plugin '@tailwindcss/forms';
 @plugin '@tailwindcss/typography';
+
+
+@theme {
+	--color-board-light: #ffffff;
+	--color-board-dark: #0abd30;
+	--color-board-highlight: #ff0000;
+}
